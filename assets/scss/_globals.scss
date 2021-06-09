@@ -1,0 +1,587 @@
+html {
+    overflow: visible;
+}
+body {
+    margin: 0;
+    font-family: $font-roboto;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: $text-black-5;
+    text-align: left;
+    background-color: $white;
+    overflow-x: hidden;
+    color: $black;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5rem;
+    font-family: $font-engschrift;
+    font-weight: 500;
+    line-height: 1;
+    color: $black;
+    text-transform: uppercase;
+}
+
+// .cn h1, .cn h2, .cn h3, .cn h4, .cn h5 .cn h6 {
+//     font-family: $font-yahei!important;
+//     line-height: 1.2;
+// }
+
+.filler {
+    position: absolute;
+    font-size: 1px;
+    text-indent: -9999px;
+}
+
+a {
+    text-decoration: none;
+    color: $givi-red;
+    transition: color 0.2s linear;
+
+    &:hover {
+        color: $gray-2;
+    }
+}
+
+img {
+    @include crisp-image;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.drop-arrow {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 7px;
+    border-right-width: 7px;
+    border-top: 6px solid $black;
+}
+
+// TEXTS
+.text-highlight {
+    color: $givi-red;
+}
+
+.text-color-gray-3 {
+    color: $gray-3 !important;
+}
+
+.info-text {
+    display: block;
+    margin-top: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    color: $gray-3;
+}
+
+.message-note {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f1f1f1;
+    margin-bottom: 30px;
+    p {
+        margin: 0;
+    }
+}
+
+// SIZES
+.full-width {
+    width: 100%;
+}
+.width-auto {
+    width: auto;
+}
+
+// FORM
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+select {
+    width: 100%;
+    padding: 10px !important;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+}
+
+.form-check-input:checked {
+    background-color: $givi-red;
+    border-color: $givi-red;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: $givi-red;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    border-color: $givi-red;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:focus {
+    border-color: $givi-red;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+// BUTTONS
+.btn-close:focus,
+.btn-close:active,
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+button {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: $gray-2;
+    color: $white;
+    font-family: $font-engschrift;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    padding: 8px 40px;
+
+    @include sm {
+        font-size: 1.1rem;
+        padding: 8px 20px;
+    }
+
+    &:hover {
+        background-color: $gray-3;
+        color: $white;
+    }
+}
+
+.button-primary {
+    background-color: $givi-red;
+    color: $white;
+
+    &:hover {
+        background-color: $gray-2;
+        color: $white;
+    }
+}
+
+.button-small {
+    padding: 5px 20px;
+    font-size: 1.1rem;
+}
+
+.button.icon {
+    padding-left: 45px;
+    padding-right: 20px;
+}
+
+.button.reset-icon {
+    background: $givi-red url(../images/background-images/icons/reset-icon-white.svg) top 5px left 15px no-repeat;
+    background-size: 24px;
+
+    &:hover {
+        background: $gray-1 url(../images/background-images/icons/reset-icon-white.svg) top 5px left 15px no-repeat;
+        background-size: 24px;
+    }
+}
+
+.button.wishlist-icon {
+    background: $givi-red url(../images/background-images/icons/heart-icon-white.svg) top 7px left 19px no-repeat;
+    background-size: 18px;
+
+    &:hover {
+        background: $gray-1 url(../images/background-images/icons/heart-icon-white.svg) top 7px left 19px no-repeat;
+        background-size: 18px;
+    }
+}
+
+
+
+// Video
+video {
+    &:focus {
+        outline: none;
+    }
+}
+
+.video-responsive {
+    width: 100%;
+}
+
+#toTop {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30px;
+    right: 30px;
+    color: transparent;
+    font-size: 2rem;
+    background: $gray-3 url(../images/background-images/icons/carousel-general-arrow-white.svg) center center no-repeat;
+    background-size: 13px;
+    transform: rotate(-90deg);
+    transition: all 0.2s linear;
+
+    &:hover {
+        background-color: $gray-2;
+    }
+}
+
+// OWL CAROUSEL
+.owl-carousel {
+    .owl-stage {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-box;
+        display: box;
+    }
+
+    .owl-nav {
+        button {
+            position: absolute;
+            top: 40%;
+            background-color: $givi-red !important;
+            width: 30px;
+            height: 50px;
+            transition: all 0.2s ease-in-out;
+            opacity: 0.6;
+
+            span {
+                height: calc(100% - 6px);
+                color: transparent !important;
+                display: block;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                width: 40px;
+                opacity: 1;
+            }
+        }
+
+        .owl-prev {
+            left: 0;
+
+            span {
+                transform: rotate(180deg);
+                background: url(../images/background-images/icons/carousel-general-arrow-white.svg) center center no-repeat;
+            }
+        }
+
+        .owl-next {
+            right: 0;
+
+            span {
+                background: url(../images/background-images/icons/carousel-general-arrow-white.svg) center center no-repeat;
+            }
+        }
+    }
+
+    .owl-dots.disabled {
+        display: none!important;
+    }
+
+}
+
+
+// MODALS
+
+// General Modal
+.general-modal {
+    padding: 0 !important;
+
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    .modal-title {
+        padding: 20px;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .modal-body {
+        min-height: 300px;
+        display: flex;
+        justify-content: center;
+
+        .share-box {
+            max-width: 400px;
+            min-width: 350px;
+            text-align: center;
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 50px;
+            }
+
+            ul.share-links {
+                @include flex-center-all;
+
+                li {
+                    margin: 0 10px;
+
+                    a {
+                        color: $gray-1;
+
+                        img {
+                            margin-right: 5px;
+                        }
+
+                        &:hover {
+                            color: $givi-red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// WECHAT QR MODAL
+.wechat-qr-modal {
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+    }
+    .modal-body {
+        text-align: center;
+        img {
+            display: inline;
+            max-width: 100%;
+        }
+    }
+}
+
+// Search Modal
+.search-modal {
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    .modal-body {
+        display: flex;
+        justify-content: center;
+        margin-top: 20vh;
+
+        .search-box {
+            max-width: 400px;
+            min-width: 350px;
+            text-align: center;
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 50px;
+            }
+
+            input {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .share-box {
+            max-width: 400px;
+            min-width: 350px;
+            text-align: center;
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 50px;
+            }
+
+            ul.share-links {
+                @include flex-center-all;
+            }
+        }
+    }
+}
+
+// Product Features Modal
+.product-features-modal {
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+    }
+
+    .modal-title {
+        padding: 40px 20px;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .modal-body {
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a.product-link {
+                width: 150px;
+                padding: 10px;
+                margin: 10px;
+                text-align: center;
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    font-family: $font-oswald;
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    line-height: 1.5rem;
+                    color: $gray-2;
+                    transition: color 0.2s linear;
+                }
+
+                &:hover h3 {
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+// Overlays
+.global-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1005;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+
+// Mobile Menu Hamburger Icon
+.mobile-menu-trigger {
+    transform: scale(0.4);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.line {
+    fill: none;
+    stroke: $black;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 3;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+}
+
+.active .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+
+.active .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 3;
+}
+
+.active .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}

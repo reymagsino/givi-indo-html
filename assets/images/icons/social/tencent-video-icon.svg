@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="37.069" viewBox="0 0 41 37.069">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.089" x2="0.5" y2="0.089" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#53c4fe"/>
+      <stop offset="1" stop-color="#0d84f4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1.112" x2="0.5" y2="0.112" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9b93b"/>
+      <stop offset="1" stop-color="#fa7535"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" y1="1.115" x2="0.5" y2="0.115" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#aef922"/>
+      <stop offset="1" stop-color="#62bb0d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" y1="1.247" x2="0.5" y2="0.249" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.6" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e5f6d2"/>
+    </linearGradient>
+  </defs>
+  <g id="tencent-video-icon" transform="translate(0.004 -0.006)">
+    <path id="Path_1" data-name="Path 1" d="M97.835,22.219c2.593-2.765,2.293-5.31-.028-7.493A62.986,62.986,0,0,0,86.136,6.336,77.144,77.144,0,0,0,73.229.282a4.823,4.823,0,0,0-6.177,3.013,3.105,3.105,0,0,0-.178.734,81.174,81.174,0,0,0-.037,29A4.869,4.869,0,0,0,72.471,37a5.674,5.674,0,0,0,.758-.219,76.466,76.466,0,0,0,13.085-6.235C90.479,28.11,94.606,25.622,97.835,22.219Z" transform="translate(-58.67 0)" fill="url(#linear-gradient)"/>
+    <path id="Path_2" data-name="Path 2" d="M8.324,41.988a1.714,1.714,0,0,1-.41-.121c-2.877-.779-5.408.121-6.563,2.865C-.067,48.163,0,52.02,0,55.784s-.032,7.556,1.323,11c1.25,3.162,3.686,3.644,6.563,2.865.137-.028.5-.176.609-.213a67.2,67.2,0,0,1-1.628-13.62A73.977,73.977,0,0,1,8.324,41.988Z" transform="translate(0 -37.224)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_3" data-name="Path 3" d="M66.984,45.5a68.816,68.816,0,0,0-.032,27.562,92.542,92.542,0,0,0,13.232-4.648,68.828,68.828,0,0,0,11.94-6.338c2.636-1.848,2.373-3.992-.032-5.719a65.612,65.612,0,0,0-12.15-6.366A90.341,90.341,0,0,0,66.984,45.5Z" transform="translate(-60.404 -40.716)" fill="url(#linear-gradient-3)"/>
+    <path id="Path_4" data-name="Path 4" d="M119.341,125.561s-.441.641-.441,6.458.441,6.532.441,6.532c.137.714.473.945,1.25.777,0,0,1.323-.2,6.563-2.846s6.122-3.654,6.122-3.654c.578-.578.714-.945,0-1.554a30.263,30.263,0,0,0-6.122-3.717,31.843,31.843,0,0,0-6.563-2.772C119.919,124.585,119.509,124.784,119.341,125.561Z" transform="translate(-108.133 -113.494)" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

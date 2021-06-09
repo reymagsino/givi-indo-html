@@ -1,0 +1,314 @@
+// CHINESE PAGES SPECIFIC STYLING
+html.cn {
+
+    // ----------------- LAYOUTS -----------------
+    // (CN) MAIN HEADER - Desktop
+    .main-header .main-nav .nav-menu-room .nav-menu ul.core-nav li a .link-text {
+        transform: rotate(0deg);
+        line-height: 1.1rem;
+    }
+
+    .main-header .main-nav .nav-menu-room .nav-menu .nav-item-canvas .attitude-item ul li a {
+        font-size: 4.5rem;
+    }
+
+    .main-header .main-nav .nav-menu-room .nav-menu .nav-item-canvas .explore-item ul.explore-links li a {
+        font-size: 4rem;
+    }
+
+
+
+    // ----------------- HOMEPAGE -----------------
+    // (CN) HOMEPAGE - Hero
+    .hero-canvas .hero .carousel-hero .carousel-item .carousel-caption a {
+        width: auto;
+    }
+
+    @include sm {
+        .attitude-canvas .attitude .attitude-box .box-inner .box-intro h1 {
+            font-size: 3.5rem;
+            margin-top: 8px;
+        }
+    }
+
+    // (CN) HOMEPAGE - Configurator
+    .configurator-canvas .configurator .intro h1 {
+        font-size: 3rem;
+    }
+
+    .configurator-canvas .configurator .intro p {
+        width: 370px;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-right: 40px;
+
+        @include md {
+            width: auto;
+            padding: 0;
+        }
+    }
+
+
+
+    // ----------------- PRODUCT RANGE PAGE -----------------
+    // (CN) PRODUCT - Main
+    .product-canvas .product .product-intro h1 {
+        font-family: $font-engschrift;
+    }
+
+    .products-canvas .products a.product-link h3 {
+        font-family: $font-engschrift;
+        line-height: 1;
+    }
+
+    // (CN) PRODUCT RANGE - Banner
+    .pr-banner-canvas .pr-banner .intro .intro-texts {
+        padding: 20px 50px 50px;
+
+        @include sm {
+            padding: 0 25px 80px;
+        }
+
+        p {
+            text-align: justify;
+            text-align-last: center;
+        }
+    }
+
+
+
+    // ----------------- PRODUCT PAGE -----------------
+    // (CN) PRODUCT - Main
+    .product-canvas .product .features h4 {
+        font-size: 1.6rem;
+    }
+
+    .product-canvas .product .product-intro h3 {
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .product-canvas .product .attitude-links h4 {
+        font-size: 1.6rem;
+    }
+
+    .product-canvas .product .product-infotext-canvas .product-infotext p {
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    // (CN) PRODUCT - Product Options
+    .product-options-canvas .product-options .product-options-carousel-canvas .owl-carousel a.product-link h3 {
+        font-family: $font-engschrift;
+    }
+
+    .product-options-canvas .product-options .product-options-tab {
+        margin-top: -51px;
+    }
+
+    .product-options-canvas .product-options .product-options-tab button {
+        font-size: 1.3rem;
+    }
+
+
+
+    // ----------------- ATTITUDE PAGE -----------------
+    // (CN) ATTITUDE - Hero
+    .attitude-hero-canvas .attitude-hero h1 {
+        margin: 0 auto 15px;
+        line-height: 1.1;
+    }
+
+    @include xs {
+        .attitude-intro-canvas .attitude-intro h2 {
+            line-height: 2.5rem;
+        }
+    }
+
+    .attitude-hero-canvas .attitude-hero h3 {
+        padding: 6px 8px 9px;
+    }
+
+    // (CN) ATTITUDE - PRODUCTS
+    .attitude-products-canvas .attitude-products .attitude-products-carousel .carousel-attitude-products a.product-link h3 {
+        font-family: $font-engschrift;
+        line-height: 1;
+    }
+
+    // (CN) ATTITUDE - Motorcycles
+    .attitude-motorcycles-canvas .attitude-motorcycles-carousel .carousel-attitude-motorcycles a.item-link h3 {
+        font-family: $font-engschrift;
+        line-height: 1;
+    }
+
+    @include xs {
+        .attitude-motorcycles-canvas .attitude-motorcycles .intro h2 {
+            line-height: 2.5rem;
+        }
+    }
+
+    // ----------------- DEALER LOCATOR PAGE -----------------
+    // (CN) - Dealer Locator Page
+    .dealer-locator-canvas {
+        background: url(../images/background-images/dealer-locator/china-map-cn.png) top -450px right -190px no-repeat;
+
+        @media (min-width: 1500px) {
+            background: url(../images/background-images/dealer-locator/china-map-cn.png) top -450px right 160px no-repeat;
+        }
+
+        @include sm {
+            background: url(../images/background-images/dealer-locator/china-map-cn.png) top -100px right -290px no-repeat;
+        }
+
+        @include xs {
+            background: url(../images/background-images/dealer-locator/china-map-cn.png) top 60px right -180px no-repeat;
+            background-size: 900px;
+        }
+    }
+
+
+    // ----------------- CONFIGURATOR PAGES -----------------
+    // (CN) CONFIGURATOR - Body
+    .configurator-body-canvas .configurator-body .configurator-product-canvas .configurator-product .product-intro h1 {
+        font-family: $font-engschrift;
+    }
+
+    .configurator-body-canvas .configurator-body .wish-items .wish .wish-info h4 {
+        font-family: $font-engschrift;
+    }
+
+    // (CN) CONFIGURATOR - Accessories Options
+    .accessories-options-canvas .accessories-options .product-options-carousel-canvas .owl-carousel a.product-link h3 {
+        font-family: $font-engschrift;
+    }
+
+    // (CN) CONFIGURATOR - Details Options
+    .accessories-details-options-canvas .product-options .product-options-tab button {
+        font-size: 1.3rem;
+    }
+
+    .accessories-details-options-canvas .product-options .product-options-carousel-canvas .owl-carousel .item h3 {
+        font-family: $font-engschrift;
+    }
+
+
+    // ----------------- DEALER LOCATOR PAGE -----------------
+    .dealer-locator-canvas .dealer-locator .info-boxes .info-box h1 {
+        font-size: 4rem;
+
+        @include xs {
+            font-size: 2.8rem;
+        }
+    }
+
+    .dealer-locator-canvas .dealer-locator .info-boxes .info-box h3 {
+        font-size: 1.4rem;
+
+        @include xs {
+            font-size: 1.2rem;
+        }
+    }
+
+    // ----------------- GENERAL CONTENT -----------------
+    .general-content-canvas .general-content .content-body {
+        p {
+            @include sm {
+                text-align: justify !important;
+                text-align-last: center;
+            }
+        }
+
+        h2 {
+            @include sm {
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+    // ----------------- CN GENERAL STYLE -----------------
+    // Centered Justified
+    .centered-justified {
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .font-din {
+        font-family: $font-engschrift;
+        font-weight: normal;
+    }
+
+    // Read More
+    a.readmore-trigger {
+        &::before {
+            content: "+ 展开" !important;
+        }
+    }
+
+    a.readmore-trigger.active {
+        &::before {
+            content: "- 关闭" !important;
+        }
+    }
+
+    button.add-to-wishlist-button {
+        &:after {
+            content: "加入心愿单" !important;
+        }
+    }
+
+    button.add-to-wishlist-button.active {
+        &:after {
+            content: "已加入心愿单" !important;
+        }
+    }
+
+    button.wishlist-icon {
+        &:after {
+            content: "加入心愿单" !important;
+        }
+    }
+
+    button.wishlist-icon.active {
+        &:after {
+            content: "已加入心愿单" !important;
+        }
+    }
+
+    button.add-to-wishlist-button {
+        &:after {
+            content: "加入心愿单" !important;
+        }
+    }
+
+    button.add-to-wishlist-button.active {
+        &:after {
+            content: "已加入心愿单" !important;
+        }
+    }
+
+    button.wishlist-icon {
+        &:after {
+            content: "加入心愿单" !important;
+        }
+    }
+
+    button.wishlist-icon.active {
+        &:after {
+            content: "已加入心愿单" !important;
+        }
+    }
+
+    a.add-to-wishlist-link {
+        &:after {
+            content: "加入心愿单" !important;
+        }
+    }
+
+    a.add-to-wishlist-link.active {
+        &:after {
+            content: "已加入心愿单" !important;
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Sync" transform="translate(0.307 0.307)">
+    <g id="Layer_x0020_1" transform="translate(-0.203 -0.203)">
+      <g id="_422492464" transform="translate(0 0)">
+        <rect id="_422493064" width="32" height="32" transform="translate(-0.104 -0.104)" fill="none"/>
+        <rect id="_422492896" width="24" height="24" transform="translate(3.896 3.896)" fill="none"/>
+      </g>
+      <g id="_422491192" transform="translate(4.672 4.568)">
+        <path id="_422492272" d="M378.871,293.717a11.277,11.277,0,0,1,4.149-4.15h0a11.338,11.338,0,0,1,16.62,12.751l-.95-.254a10.354,10.354,0,0,0-15.177-11.647h0a10.415,10.415,0,0,0-3.789,3.789l-.85-.489Z" transform="translate(-377.577 -288.045)" fill="#fffffe" stroke="#fff" stroke-width="1"/>
+        <path id="_422491936" d="M307.312,435.534l.824,3.37,3.269-.134.038.981-3.67.15-.4.016-.1-.392-.92-3.762Z" transform="translate(-306.18 -433.264)" fill="#fffffe" stroke="#fff" stroke-width="1"/>
+        <path id="_422491696" d="M315.966,841.288a11.337,11.337,0,0,1-20.768-8.6l.95.254a10.354,10.354,0,0,0,18.967,7.856l.85.493Z" transform="translate(-294.812 -824.302)" fill="#fffffe" stroke="#fff" stroke-width="1"/>
+        <path id="_422491216" d="M1415.342,1331.994l-.824-3.37-3.269.134-.038-.981,3.67-.15.4-.016.1.392.92,3.762Z" transform="translate(-1394.026 -1311.609)" fill="#fffffe" stroke="#fff" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
