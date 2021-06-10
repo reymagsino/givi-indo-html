@@ -237,6 +237,21 @@ jQuery(function() {
         autoplayHoverPause: true
     });
     
+    // CAROUSEL - (News)
+    jQuery('.carousel-news').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 5000,
+        loop:true,
+        dots: true,
+        nav: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items: 1,
+        margin:0,
+        center:true,
+        autoplayHoverPause: true
+    });
+
     // CAROUSEL - (Configurator -> Accessories)
     var $owl = jQuery('.carousel-model');
 
