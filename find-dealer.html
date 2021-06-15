@@ -25,7 +25,7 @@
         <header class="main-header">
 
             <a href="index.html" class="logo">
-                <img src="/dist/images/general/givi-logo-white.svg" alt="" />
+                <img src="dist/images/general/givi-logo-white.svg" alt="" />
             </a>
             <div class="top-links">
                 <div class="alpha-links">
@@ -332,14 +332,14 @@
 
                     <div class="results" id="result-accordion">
 
-                        <span class="info-text">No dealers found.</span>
+                        <!-- <span class="info-text">No dealers found.</span> -->
 
                         <div class="result-item">
-                            <button class="accordion-button result-item-head" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1">
+                            <button class="accordion-button result-item-head collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1">
                                 ACEH
                             </button>
                             
-                            <div id="collapse-1" class="collapse show result-item-body" data-bs-parent="#result-accordion">
+                            <div id="collapse-1" class="collapse result-item-body" data-bs-parent="#result-accordion">
                                 <div class="dealer-list">
                                     <div class="dealer">
                                         <h3>REJEKI MOTOR VARIASI CIREBON</h3>
@@ -352,7 +352,7 @@
                                             0878-29750720
                                         </span>
                                     </div>
-                                    <div class="dealer">
+                                    <div class="dealer active">
                                         <h3>GIVI POINT RADIO DALAM</h3>
                                         <address>
                                             JL. Tentara Pelajar No.36<br />
@@ -391,11 +391,11 @@
                         
                         <div class="result-item">
                             
-                            <button class="accordion-button result-item-head collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+                            <button class="accordion-button result-item-head" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2">
                                 BALI
                             </button>
                             
-                            <div id="collapse-2" class="collapse result-item-body" data-bs-parent="#result-accordion">
+                            <div id="collapse-2" class="collapse show result-item-body" data-bs-parent="#result-accordion">
                                 <div class="contact-list">
                                     <div class="dealer-list">
                                         <div class="dealer">
@@ -409,7 +409,7 @@
                                                 0878-29750720
                                             </span>
                                         </div>
-                                        <div class="dealer">
+                                        <div class="dealer active">
                                             <h3>GIVI POINT RADIO DALAM</h3>
                                             <address>
                                                 JL. Tentara Pelajar No.36<br />
@@ -449,7 +449,7 @@
                       </div>
                 </aside>
                 <div class="map">
-
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bali&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </div>
         </section>

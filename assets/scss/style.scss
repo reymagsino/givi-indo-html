@@ -4130,30 +4130,30 @@ img.document-logo {
         }
         .commands {
             padding-left: 50px;
-            width: 400px;
-            padding-top: 200px;
-
+            width: 370px;
+            padding-top: 180px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            padding-right: 20px;
             @include md {
                 padding: 30px 15px;
                 width: 100%;
             }
 
             h1 {
-                padding-right: 30px;
                 font-size: 2.8rem;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             .search-field {
                 position: relative;
-                padding-right: 30px;
-                margin-bottom: 30px;
+                margin-bottom: 5px;
                 @include md {
                     padding: 0;
                 }
                 input {
                     border: none;
-                    border-bottom: 1px solid $gray-3;
+                    background: $gray-5;
                     &:focus {
                         outline: none!important;
                         border: none!important;
@@ -4163,13 +4163,13 @@ img.document-logo {
                 button {
                     position: absolute;
                     top: 3px;
-                    right: 30px;
+                    right: 0;
                     color: transparent;
                     font-size: 1px;
                     width: 50px;
                     height: 42px;
                     border: none;
-                    background: url(../images/background-images/icons/dealer/search-icon-black.svg) top 6px right 17px no-repeat;
+                    background: url(../images/background-images/icons/dealer/search-icon-black.svg) top 8px right 17px no-repeat;
                     @include md {
                         right: 0;
                     }
@@ -4178,9 +4178,7 @@ img.document-logo {
 
             .results {
                 max-height: 500px;
-                overflow-y: scroll;
-                overflow-x: hidden;
-                padding-right: 20px;
+                min-height: 400px;
                 @include md {
                     max-height: 100%;
                     overflow: hidden;
@@ -4210,26 +4208,49 @@ img.document-logo {
                         .dealer-list {
                             padding-top: 20px;
                             .dealer {
-                                padding: 0 0 20px 10px;
+                                padding: 10px 10px;
+                                transition: background-color 0.2s ease-in-out;
+                                margin-bottom: 2px;
+                                &:hover {
+                                    background: #fafafa;
+                                }
                                 h3 {
                                     color: $givi-red;
                                     text-transform: uppercase;
                                     font-size: 1.6rem;
-                                    margin-bottom: 15px;
+                                    margin-bottom: 5px;
+                                    cursor: pointer;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
                                 }
                                 address {
                                     font-size: 0.9rem;
                                     color: $gray-2;
                                     margin: 0;
                                     padding-left: 30px;
-                                    line-height: 1.7rem;
+                                    line-height: 1.5rem;
                                     background: url(../images/background-images/icons/dealer/pin-icon-red.svg) top 4px left 0 no-repeat;
+                                    transition: color 0.2s ease-in-out;
                                 }
                                 .phone {
                                     font-size: 0.9rem;
                                     color: $gray-2;
                                     padding-left: 30px;
                                     background: url(../images/background-images/icons/dealer/phone-icon-red.svg) top 1px left 0 no-repeat;
+                                    transition: color 0.2s ease-in-out;
+                                }
+                            }
+                            .dealer.active {
+                                background: rgba(224, 12, 25, 0.05);
+                                h3 {
+                                    text-decoration: underline;
+                                }
+                                address {
+                                    color: $givi-red;
+                                }
+                                .phone {
+                                    color: $givi-red;
                                 }
                             }
                         }
@@ -4243,6 +4264,10 @@ img.document-logo {
             @include md {
                 height: 400px;
                 width: 100%;
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -4413,6 +4438,9 @@ nav.general-pagination {
 
 // NEWS - CONTENT
 .news-content {
+    h1,h2,h3,h4,h5,h6 {
+        margin: 30px 0 15px 0;
+    }
     h1 {
 
     }
@@ -4426,13 +4454,14 @@ nav.general-pagination {
 
     }
     h5 {
-
+        margin-bottom: 10px;
     }
     h6 {
-
+        margin-bottom: 10px;
     }
     img {
         max-width: 100%;
+        margin-bottom: 30px;
     }
     p {
         line-height: 2rem;
@@ -4441,8 +4470,18 @@ nav.general-pagination {
 
     }
     ul {
+        padding-left: 30px;
+        margin-bottom: 20px;
         li {
-
+            list-style: disc;
+            margin-bottom: 7px;
+        }
+    }
+    ol {
+        padding-left: 30px;
+        margin-bottom: 20px;
+        li {
+            margin-bottom: 7px;
         }
     }
 
@@ -4492,6 +4531,7 @@ nav.general-pagination {
             }   
             img {
                 width: 100%;
+                margin: 0;
             }
             &:nth-last-child(2) {
                 margin-right: 15px;
@@ -4520,7 +4560,7 @@ nav.general-pagination {
     }
 }
 
-// NEW PAGER
+// NEWS PAGER
 .pager-canvas {
     margin: 100px 0 30px 0;
     .pager {
