@@ -80,12 +80,12 @@ jQuery(function() {
 
 
     // MAIN HEADER - MAIN MENU - Hover
-    jQuery(document).on("mouseenter", ".attitude-trigger", function() {
-            jQuery(".nav-item:not(.attitude)").stop().hide();
-            jQuery(".attitude-item").stop().show();
-            jQuery(".attitude-trigger").addClass("active");
+    jQuery(document).on("mouseenter", ".warranty-trigger", function() {
+            jQuery(".nav-item:not(.warranty)").stop().hide();
+            jQuery(".warranty-item").stop().show();
+            jQuery(".warranty-trigger").addClass("active");
         }
-    ).on('mouseleave', ".attitude-trigger", function() {
+    ).on('mouseleave', ".warranty-trigger", function() {
         jQuery("ul.core-nav li a").removeClass("active");
         jQuery("ul.trigger-nav li a").removeClass("active");
     });
@@ -103,7 +103,7 @@ jQuery(function() {
 
     jQuery(document).on("mouseenter", ".my-motorcycle-trigger",
         function() {
-            jQuery(".nav-item:not(.attitude)").stop().hide();
+            jQuery(".nav-item:not(.my-motorcycle)").stop().hide();
             jQuery(".my-motorcycle-item").stop().show();
             jQuery(".my-motorcycle-trigger").addClass("active");
         }
@@ -114,7 +114,7 @@ jQuery(function() {
 
     jQuery(document).on("mouseenter", ".explore-trigger",
         function() {
-            jQuery(".nav-item:not(.attitude)").stop().hide();
+            jQuery(".nav-item:not(.explore)").stop().hide();
             jQuery(".explore-item").stop().show();
             jQuery(".explore-trigger").addClass("active");
         }

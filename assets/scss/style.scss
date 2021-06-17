@@ -3355,6 +3355,27 @@ img.document-logo {
                 }
             }
         }
+        .business-contact-head {
+            padding: 60px 0 30px 0;
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto;
+
+            @include xs {
+                min-width: 100%;
+                max-width: 100%;
+                padding: 130px 0 50px 0;
+            }
+
+            h1 {
+                font-size: 4rem;
+                margin-bottom: 50px;
+
+                @include xs {
+                    font-size: 3rem;
+                }
+            }
+        }
 
         .contact-form {
             margin-bottom: 80px;
@@ -3939,6 +3960,26 @@ img.document-logo {
 
                 @include md {
                     display: none;
+                }
+            }
+
+            .timeline-footer {
+                max-width: 1200px;
+                padding: 50px 40px 0 40px;
+                margin: 0 auto;
+                @include md {
+                    padding: 50px 15px 0 15px;
+                }
+                h2 {
+                    display: block;
+                    text-align: center;
+                    color: $givi-red;
+                    @include md {
+                        text-align: left;
+                    }
+                }
+                p {
+                    text-align: left;
                 }
             }
         }

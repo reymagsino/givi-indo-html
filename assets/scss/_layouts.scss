@@ -381,27 +381,6 @@
                                         box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.63);
                                     }
                                 }
-
-                                // a.urban {
-                                //     background: url(../images/background-images/menu/attitude/urban.jpg) top -7px center no-repeat;
-                                //     background-size: cover;
-                                // }
-                                // a.touring {
-                                //     background: url(../images/background-images/menu/attitude/touring.jpg) center center no-repeat;
-                                //     background-size: cover;
-                                // }
-                                // a.adventure {
-                                //     background: url(../images/background-images/menu/attitude/adventure.jpg) center center no-repeat;
-                                //     background-size: cover;
-                                // }
-                                // a.sport {
-                                //     background: url(../images/background-images/menu/attitude/sport.jpg) center center no-repeat;
-                                //     background-size: cover;
-                                // }
-                                // a.cafe {
-                                //     background: url(../images/background-images/menu/attitude/cafe.jpg) center center no-repeat;
-                                //     background-size: cover;
-                                // }
                                 &:last-child {
                                     margin: 0;
                                 }
@@ -489,82 +468,113 @@
                     .explore-item {
                         padding: 40px;
 
-                        ul.explore-links {
-                            li {
-                                margin-bottom: 20px;
-
-                                a {
-                                    display: flex;
-                                    align-items: flex-end;
-                                    height: calc(30vh - 30px);
-                                    padding: 30px 40px 0 40px;
-                                    color: $black;
-                                    font-family: $font-engschrift;
-                                    font-weight: 500;
-                                    font-size: 5rem;
-                                    text-transform: uppercase;
-                                    transition: all 0.2s ease-in-out;
-
-                                    &:hover {
-                                        position: relative;
-                                        z-index: 100;
-                                        box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.63);
-                                    }
-                                }
-
-                                a.about {
-                                    background: url(../images/background-images/menu/explore/about.jpg) center center no-repeat;
-                                    background-size: cover;
-                                }
-
-                                a.givi-world {
-                                    background: url(../images/background-images/menu/explore/givi-world-1.jpg) center center no-repeat;
-                                    background-size: cover;
-                                }
-
-                                a.sponsorship {
-                                    background: url(../images/background-images/menu/explore/sponsorship.jpg) center center no-repeat;
-                                    background-size: cover;
-                                }
-
-                                &:last-child {
-                                    margin: 0;
-                                }
-
-                                &:nth-child(odd) a {
-                                    justify-content: flex-end;
-                                }
-                            }
-                        }
-
-                        ul.social-links {
+                        .explore-links {
                             display: flex;
-                            justify-content: flex-end;
-
-                            li {
-                                margin-left: 30px;
-
-                                a {
-                                    display: flex;
-                                    align-items: center;
-                                    text-transform: uppercase;
-                                    color: $gray-3;
-                                    font-size: 1.5rem;
-                                    font-family: $font-engschrift;
-                                    transition: all 0.2s linear;
-
-                                    &:hover {
-                                        color: $black;
-                                    }
-
-                                    img {
-                                        width: 24px;
-                                        margin-left: 15px;
+                            margin-bottom: 20px;
+                            .links {
+                                width: 50%;
+                                h3 {
+                                    font-size: 2rem;
+                                    color: $givi-red;
+                                    margin-bottom: 20px;
+                                }
+                                ul {
+                                    li {
+                                        display: block;
+                                        margin-bottom: 10px;
+                                        a {
+                                            color: $gray-1;
+                                            &:hover {
+                                                color: $givi-red;
+                                            }
+                                            img {
+                                                width: 30px;
+                                                margin-right: 10px;
+                                            }
+                                        }
                                     }
                                 }
                             }
                         }
+                        .news-room {
+                            h3 {
+                                font-size: 2rem;
+                                color: $givi-red;
+                                margin-bottom: 20px;
+                            }
+                            .news-list {
+                                display: flex;
+                                .news {
+                                    width: calc(50% - 20px);
+                                    margin-right: 20px;
+                                    a.news-thumb {
+                                        display: block;
+                                        margin-bottom: 20px;
+                                        &:hover {
+                    
+                                        }
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                    h2 {
+                                        font-size: 1.5rem;
+                                        text-transform: unset;
+                                        margin-bottom: 15px;
+                                        &:hover {
+                    
+                                        }
+                                        a {
+                                            color: $gray-1; 
+                                            &:hover {
+                                                color: $givi-red;
+                                            }   
+                                        }
+                                    }
+                                    p {
+                                        color: $gray-2;
+                                        font-size: 0.9rem;
+                                        line-height: 1.7rem;
+                                    }
+                                    a.news-link {
+                                        font-family: $font-engschrift;
+                                        text-transform: uppercase;
+                                        font-size: 1.3rem;
+                                        padding-right: 30px;
+                                        transition: 0.1s all ease-in-out;
+                                        background: url(../images/background-images/icons/readmore-arrow-icon-red.svg) top 6px right 10px no-repeat;
+                                        &:hover {
+                                            background: url(../images/background-images/icons/readmore-arrow-icon-red.svg) top 6px right 0 no-repeat;
+                                        }
+                                    }
+                                }
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                    .warranty-item {
+                        padding: 40px;
+                        h2 {
+                            font-size: 3rem;
+                            color: $givi-red;
+                            margin-bottom: 30px;
+                        }
+                        img {
+                            display: block;
+                            width: 100%;
+                            margin-bottom: 30px;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                            line-height: 1.5rem;
+                            color: $gray-1;
+                            margin-bottom: 30px;
+                        }
+                        a {
 
+                        }
                     }
                 }
             }
@@ -963,7 +973,7 @@
 
                     img {
                         width: 21px;
-                        margin-left: 10px;
+                        margin-right: 10px;
                     }
                 }
             }
